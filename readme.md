@@ -1,1 +1,1 @@
-this is a simple readme file
+visit blog at https://cloudnative-apps.github.io/learn/
