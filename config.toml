@@ -1,7 +1,8 @@
-baseURL =   "http://localhost:1313/learn.github.io/"
+baseURL =   "http://localhost:1313/learn/"
 languageCode = 'en-us'
 theme = 'LoveIt'
-
+relativeURLs = true
+canonifyURLs = true
 title = "Tech Blog"
 
 
