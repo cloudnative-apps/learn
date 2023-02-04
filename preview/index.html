@@ -1,0 +1,353 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>- Tech Blog</title><meta name=Description content="About FeelIt Theme"><meta property="og:title" content><meta property="og:description" content="Preview 03:05 Code for the course 00:28 Support for Apple M1 users 00:30 Preview 09:34 Preview 02:49 Extra note for Linux Users 00:18 If you already have Docker installed&mldr; 01:41 Preview 07:16 Preview 03:34 Preview 06:42 Preview 02:46 Attention Apple M1 Users! 00:59 Preview 12:44 Preview 09:13 Writing a Pod 05:06 Running a Pod 10:54 Important note for Docker Desktop and Driver Users 00:52 Services 07:31 NodePort and ClusterIP 12:09 Pod Selection with Labels 15:02 Exercise: Deploy ActiveMQ as a Pod and Service 10:04 ReplicaSets 10:44 Writing a ReplicaSet 10:05 Applying a ReplicaSet to Kubernetes 10:54 Deployments Overview 12:08 Managing Rollouts 12:24 Networking Overview in Kubernetes 08:18 Namespaces - kube-system 09:34 Note for M1 Architectures 00:04 Accessing MySQL from a Pod 07:15 Cygwin extra - fixing the terminal with winpty 04:52 Service Discovery 07:27 Fully Qualified Domain Names (FQDN) 03:27 WARNING - possible resource problems!"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/learn.github.io/preview/"><meta property="og:image" content="http://localhost:1313/logo.png"><meta property="article:section" content="posts"><meta property="article:modified_time" content="2023-02-04T14:54:46+05:30"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/logo.png"><meta name=twitter:title content><meta name=twitter:description content="Preview 03:05 Code for the course 00:28 Support for Apple M1 users 00:30 Preview 09:34 Preview 02:49 Extra note for Linux Users 00:18 If you already have Docker installed&mldr; 01:41 Preview 07:16 Preview 03:34 Preview 06:42 Preview 02:46 Attention Apple M1 Users! 00:59 Preview 12:44 Preview 09:13 Writing a Pod 05:06 Running a Pod 10:54 Important note for Docker Desktop and Driver Users 00:52 Services 07:31 NodePort and ClusterIP 12:09 Pod Selection with Labels 15:02 Exercise: Deploy ActiveMQ as a Pod and Service 10:04 ReplicaSets 10:44 Writing a ReplicaSet 10:05 Applying a ReplicaSet to Kubernetes 10:54 Deployments Overview 12:08 Managing Rollouts 12:24 Networking Overview in Kubernetes 08:18 Namespaces - kube-system 09:34 Note for M1 Architectures 00:04 Accessing MySQL from a Pod 07:15 Cygwin extra - fixing the terminal with winpty 04:52 Service Discovery 07:27 Fully Qualified Domain Names (FQDN) 03:27 WARNING - possible resource problems!"><meta name=application-name content="FeelIt"><meta name=apple-mobile-web-app-title content="FeelIt"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://localhost:1313/learn.github.io/preview/><link rel=next href=http://localhost:1313/learn.github.io/mypost/><link rel=stylesheet href=/learn.github.io/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'"><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'"><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/localhost:1313\/learn.github.io\/preview\/"},"image":["http:\/\/localhost:1313\/images\/Apple-Devices-Preview.webp"],"genre":"posts","wordcount":851,"url":"http:\/\/localhost:1313\/learn.github.io\/preview\/","dateModified":"2023-02-04T14:54:46+05:30","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":"http:\/\/localhost:1313\/images\/avatar.webp"},"author":{"@type":"Person","name":"Sharad"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/learn.github.io/ title="Tech Blog"><span class=header-title-pre><i class="fas fa-hand-holding-heart fa-fw"></i></span>Tech Blog</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/learn.github.io/learn.github.io/posts/>Posts </a><a class=menu-item href=/learn.github.io/learn.github.io/tags/>Tags </a><a class=menu-item href=/learn.github.io/learn.github.io/categories/>Categories </a><a class=menu-item href=/learn.github.io/learn.github.io/categories/documentation/>Docs </a><a class=menu-item href=/learn.github.io/learn.github.io/about/>About </a><a class=menu-item href=/learn.github.io/aws-services/ title="AWS Services">AWS </a><a class=menu-item href=/learn.github.io/mypost/ title=Databases>Databases </a><a class=menu-item href=/learn.github.io/containerization/ title="Docker And Kubernetes">Containerization </a><a class=menu-item href=/learn.github.io/12-principles-of-cloudnave-app/ title="12 Factor Principles of Cloudnative Apps ">12 Factor Principles of Cloudnative Apps </a><a class=menu-item href=/learn.github.io/azure/ title=Azure>Azure </a><a class=menu-item href=/learn.github.io/devops/ title=DevOps>DevOps </a><a class=menu-item href=/learn.github.io/graph-ql/ title="Graph QL">Graph QL </a><a class=menu-item href=/learn.github.io/microservices/ title=Microservices>Microservices </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="menu-item language" title="Select Language"><i class="fa fa-globe" aria-hidden=true></i>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/learn.github.io/preview/ selected>English</option></select></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/learn.github.io/ title="Tech Blog"><span class=header-title-pre><i class="fas fa-hand-holding-heart fa-fw"></i></span>Tech Blog</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/learn.github.io/learn.github.io/posts/ title>Posts</a><a class=menu-item href=/learn.github.io/learn.github.io/tags/ title>Tags</a><a class=menu-item href=/learn.github.io/learn.github.io/categories/ title>Categories</a><a class=menu-item href=/learn.github.io/learn.github.io/categories/documentation/ title>Docs</a><a class=menu-item href=/learn.github.io/learn.github.io/about/ title>About</a><a class=menu-item href=/learn.github.io/aws-services/ title="AWS Services">AWS</a><a class=menu-item href=/learn.github.io/mypost/ title=Databases>Databases</a><a class=menu-item href=/learn.github.io/containerization/ title="Docker And Kubernetes">Containerization</a><a class=menu-item href=/learn.github.io/12-principles-of-cloudnave-app/ title="12 Factor Principles of Cloudnative Apps ">12 Factor Principles of Cloudnative Apps </a><a class=menu-item href=/learn.github.io/azure/ title=Azure>Azure</a><a class=menu-item href=/learn.github.io/devops/ title=DevOps>DevOps</a><a class=menu-item href=/learn.github.io/graph-ql/ title="Graph QL">Graph QL</a><a class=menu-item href=/learn.github.io/microservices/ title=Microservices>Microservices</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class=menu-item title="Select Language"><i class="fa fa-globe fa-fw" aria-hidden=true></i>
+<select class=language-select onchange="location=this.value"><option value=/learn.github.io/preview/ selected>English</option></select></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://www.sharadsingh.net/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Sharad</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;851 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;4 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div></div><div class=content id=content><p>Preview
+03:05
+Code for the course
+00:28
+Support for Apple M1 users
+00:30
+Preview
+09:34
+Preview
+02:49
+Extra note for Linux Users
+00:18
+If you already have Docker installed&mldr;
+01:41
+Preview
+07:16
+Preview
+03:34
+Preview
+06:42
+Preview
+02:46
+Attention Apple M1 Users!
+00:59
+Preview
+12:44
+Preview
+09:13
+Writing a Pod
+05:06
+Running a Pod
+10:54
+Important note for Docker Desktop and Driver Users
+00:52
+Services
+07:31
+NodePort and ClusterIP
+12:09
+Pod Selection with Labels
+15:02
+Exercise: Deploy ActiveMQ as a Pod and Service
+10:04
+ReplicaSets
+10:44
+Writing a ReplicaSet
+10:05
+Applying a ReplicaSet to Kubernetes
+10:54
+Deployments Overview
+12:08
+Managing Rollouts
+12:24
+Networking Overview in Kubernetes
+08:18
+Namespaces - kube-system
+09:34
+Note for M1 Architectures
+00:04
+Accessing MySQL from a Pod
+07:15
+Cygwin extra - fixing the terminal with winpty
+04:52
+Service Discovery
+07:27
+Fully Qualified Domain Names (FQDN)
+03:27
+WARNING - possible resource problems!
+00:50
+An Introduction to Microservices
+15:18
+Introduction to Microservices Part 2
+10:40
+Deploying the Queue
+12:38
+Deploying the Position Simulator
+07:56
+Inspecting Pod Logs
+05:40
+Deploying the Position Tracker
+11:07
+Deploying the API Gateway
+04:49
+Deploying the Webapp
+06:40
+Persistence
+12:00
+Upgrading to a Mongo Pod
+13:48
+Mongo Service
+06:22
+Expanding the Minikube VM
+02:50
+Volume Mounts
+09:26
+Volumes
+14:25
+PersistentVolumeClaims
+16:26
+StorageClasses and Binding
+09:24
+Warning
+00:34
+Getting started with AWS
+10:58
+Managing a Cluster in the Cloud
+09:12
+EKS vs Kops - Which to Choose?
+09:39
+Pricing Differences - EKS vs Kops (prices correct mid 2020)
+08:18
+Choose Your Own Adventure!
+00:24
+This Section is for Kops!
+00:10
+Introducing Kops - Kubernetes Operations
+10:15
+Installing the Kops Environment - 2021 Update
+18:39
+Configuring your first cluster
+20:04
+Running the Cluster
+14:03
+This section is for EKS
+00:07
+Getting started with EKS
+13:12
+Install eksctl and AWS CLI
+06:05
+Configure the AWS credentials
+13:24
+Install kubectl
+04:28
+Start the cluster
+04:29
+This section is for both EKS and Kops
+00:15
+Provisioning SSD drives with a StorageClass
+12:51
+Warning - problems with AWS LoadBalancers
+00:46
+Note for Kops users
+00:44
+Deploying the Fleetman Workload to Kubernetes
+13:17
+Setting up a real Domain Name
+04:02
+Surviving Node Failure
+10:09
+Replicating Pods in Kubernetes
+11:03
+Deleting the Cluster
+10:28
+Preview
+05:34
+How to delete your EKS cluster
+07:06
+One last cluster deletion step
+01:01
+Preview
+00:31
+Introducing the ELK / ElasticStack
+15:39
+Installing the Stack to Kubernetes
+16:06
+Kibana - first look
+09:01
+Setting Filters and Refreshes
+05:01
+Preview
+05:14
+Kibana Dashboards
+15:25
+Monitoring a Cluster (2020 update)
+05:31
+Installing the kube-prometheus-stack
+15:16
+Use the &ldquo;Classic UI&rdquo; in the next video
+00:07
+Using the Prometheus UI
+17:19
+Introducing Grafana
+21:52
+(optional) How to Use NodePorts on a Cluster
+17:29
+Introducing Alerts - 2020 Update
+11:46
+Preparing a Slack Channel
+10:15
+Configuring the AlertManager
+15:17
+Troubleshoot the alertmanager.yaml config
+16:40
+Dealing with Firing Alerts
+16:32
+The AlertManager UI and how to Silence Alerts
+09:24
+How to handle the Watchdog
+14:31
+Using PagerDuty
+17:11
+Case Study
+00:21
+Case Study: Troubleshooting a &ldquo;Delinquent&rdquo; node
+13:02
+What happens if the Master Node crashes? (Kops clusters only!)
+10:34
+Preview
+02:40
+Code / files for this section
+00:06
+Memory requests
+20:40
+CPU Requests
+07:05
+Memory and CPU Limits
+14:49
+Enabling the Metrics Server
+14:25
+Viewing Metrics on the Dashboard
+16:42
+Tuning Java Spring Boot Applications, Heap restriction
+22:52
+Setting reasonable Requests
+07:42
+Update: you will need to modify the yaml file in the next video
+00:26
+Introducing Replication and Autoscaling
+30:59
+Testing Autoscaling
+07:29
+Demo: why readiness probes are needed
+12:01
+Applying Liveness and Readiness Probes
+08:56
+Understanding the scheduler
+15:37
+QoS labels
+04:58
+Evictions
+12:03
+Pod Priorities
+12:40
+Creating a ConfigMap
+07:33
+Consuming a ConfigMap as Environment Variables
+05:29
+Do changes to a ConfigMap get propagated?
+06:37
+How to consume multiple environments variables with envFrom
+03:32
+Mounting ConfigMaps as Volumes
+09:18
+Creating Secrets
+08:11
+Using Secrets
+08:06
+Where have we already used ConfigMaps and Secrets?
+09:39
+(extra) Using Spring Cloud Kubernetes to Hot Reload ConfigMaps
+00:11
+Introducing Ingress
+12:07
+Defining Routing Rules
+15:20
+Adding Routes
+04:04
+Authentication
+15:11
+Running Ingress on AWS
+14:06
+Testing the Ingress Rules
+08:57
+(Extra) setting up HTTPS with TLS termination at the load balancer
+00:09
+Batch Jobs
+22:26
+Cron Jobs
+09:24
+DaemonSets
+06:24
+StatefulSets Overview
+22:21
+StatefulSets for Database Replication
+09:57
+Demo: Scaling out a Mongo Database
+21:38
+Introducing CI/CD
+11:12
+Establishing a GitHub organization
+10:44
+Setting up a Basic Jenkins System
+15:07
+Defining a Pipeline
+18:10
+Update - creating a Personal Access Token from Github
+01:28
+Another minor update!
+00:26
+Running a Multibranch Pipeline
+05:18
+Reviewing Builds
+10:20
+Organization Pipelines
+09:32
+Continuous Deployment into a Cluster
+16:17
+Getting Started with Helm
+09:21
+How do I Install a Helm Chart
+14:37
+How to Find Helm Charts
+10:48
+Installing a Monitoring Stack with Helm
+14:01
+Working with Chart Values
+16:14
+Customising values.yaml
+16:00
+Avoiding Snowflake Clusters!
+11:56
+Using Helm Pull to Take Control of a Chart
+16:51
+Generating yaml with &ldquo;Helm Template&rdquo;
+07:24
+Why would you write your own Helm Charts?
+10:06
+Writing Go Templates for Helm
+26:52
+Helm Functions and Pipelines
+14:19
+Flow Control in a Helm Template
+12:21
+Named Templates
+21:35
+Inspecting a Professional Helm Chart
+24:40</p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2023-02-04&nbsp;<a class=git-hash href=https://github.com/khusika/FeelIt/commit/b79c9e340f18a5d3067ed67a0ae85b4048be634c target=_blank title="commit by Sharad(sharadit2011@gmail.com) b79c9e340f18a5d3067ed67a0ae85b4048be634c: addedpages">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>b79c9e3</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/learn.github.io/preview/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://localhost:1313/learn.github.io/preview/ data-title><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://localhost:1313/learn.github.io/preview/ data-title><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/learn.github.io/>Home</a></span></section></div><div class=post-nav><a href=/learn.github.io/mypost/ class=next rel=next title=Databases>Databases<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2019 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://www.sharadsingh.net/ target=_blank>Sharad</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{algoliaAppID:"UAL0NNJWXE",algoliaIndex:"index.en",algoliaSearchKey:"7b7fbdfb7ee82ee61901f2c6b09b05be",highlightTag:"em",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"algolia"}}</script><script type=text/javascript src=/learn.github.io/js/theme.min.js></script></body></html>

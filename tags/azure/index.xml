@@ -1,0 +1,6 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Azure - Tag - Tech Blog</title><link>http://localhost:1313/learn.github.io/tags/azure/</link><description>Azure - Tag - Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharadit2011@outlook.com (Sharad)</managingEditor><webMaster>sharadit2011@outlook.com (Sharad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/learn.github.io/tags/azure/" rel="self" type="application/rss+xml"/><item><title>Azure</title><link>http://localhost:1313/learn.github.io/azure/</link><pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate><author>Sharad</author><guid>http://localhost:1313/learn.github.io/azure/</guid><description><![CDATA[<h3 id="azure-core-concepts">Azure Core Concepts</h3>
+<h4 id="iaas">IAAS</h4>
+<h4 id="paas">PAAS</h4>
+<h4 id="faas">FAAS</h4>
+<h3 id="azure-compute">Azure Compute</h3>
+<p>Azure compute is an on-demand computing services for running cloud based applications.</p>]]></description></item></channel></rss>
