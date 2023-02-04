@@ -1,0 +1,8 @@
+baseURL = "https://cloudnative-apps/learn.github.io/"
+languageCode = 'en-us'
+title = 'Yearly notes'
+enableEmoji = true
+
+[params]
+title= "Daily notes"
+author = "Sharad"
