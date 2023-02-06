@@ -77,3 +77,71 @@ Number of VM
 #### Virtual machine scale sets
  Virtual machine scale sets are like image  of an operating system
 
+
+
+
+### Eventhub
+
+* Configure resource group and location.
+```
+az configure --defaults group=[sandbox Resource Group] location=westus2
+```
+* Create Eventhub namespace
+```
+az eventhubs namespace create --name $NS_NAME
+```
+* Fetch authorization key and connectionstring
+```
+az eventhubs namespace authorization-rule keys list \
+    --name RootManageSharedAccessKey \
+    --namespace-name $NS_NAME
+```
+
+
+* Create Eventhub
+```
+az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME
+```
+* Show eventhub
+```
+az eventhubs eventhub show --namespace-name $NS_NAME --name $HUB_NAME
+```
+Connecting to eventhub
+** To Publishing Message**
+Following eventhub details are required for sending event to eventhub:
+
+1. Event hub namespace name
+2. Event hub name
+3. Shared access policy name
+4. Primary shared access key
+
+
+** Receive messages from an Event Hub**
+
+Following eventhub details are required:
+
+1. Event hub namespace name
+2. Event hub name
+3. Shared access policy name
+4. Primary shared access key
+5. Storage account name
+6. Storage account connection string
+7. Storage account container name
+
+
+
+```
+az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
+```
+Retrieve the storage account key.
+```
+az storage account keys list --account-name $STORAGE_NAME
+```
+Retrieve the connection string for an Azure Storage account.
+```
+az storage account show-connection-string -n $STORAGE_NAME
+```
+Creates a new container in a storage account.
+```
+az storage container create --name messages --connection-string "<connection string here>"
+```

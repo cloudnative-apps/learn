@@ -2,18 +2,24 @@
 title: "12 Factor Principles of Cloudnative Apps "
 date: 2022-03-12
 thumbnail: "img/placeholder.png"
-tags:
-  - "Cloud"
-  - "Cloud Native"
-  - "12 Factor App" 
-  - "Cloud App"
-  - "Cloud Migrations"
-
-categories:
-  - "Cloud Native" 
-  - "Design Principles" 
-menu: main
+# tags:
+#   - "Cloud"
+#   - "Cloud Native"
+#   - "12 Factor App" 
+#   - "Cloud App"
+#   - "Cloud Migrations"
+author: "Sharad"
+authorLink: "https://sharadsingh.net"
+categories: ["Cloud Native","Design Principles"]
+  # - "Cloud Native" 
+  # - "Design Principles" 
+#menu: main
+tags: ["Cloud", "Cloud Native","12 Factor App", "Cloud App"]
 ---
+
+
+
+
 
 
 ### 12-factor app principles
