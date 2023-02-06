@@ -4,5 +4,5 @@
 <h4 id="faas">FAAS</h4>
 <h3 id="azure-compute">Azure Compute</h3>
 <p>Azure compute is an on-demand computing services for running cloud based applications.</p>]]></description></item><item><title>AWS Services</title><link>http://localhost:1313/learn/aws-services/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><author>Sharad</author><guid>http://localhost:1313/learn/aws-services/</guid><description><![CDATA[Lambda function static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.]]></description></item></channel></rss>
+▾ &lt;root&gt; ▾ images logo.png  should become
+ &lt;root&gt; ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.]]></description></item></channel></rss>
