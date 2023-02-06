@@ -1,20 +1,20 @@
 ---
-title: "Docker And Kubernetes"
-date: 2022-01-01
-thumbnail: "img/placeholder.png"
-tags:
-  - "Docker"
-  - "Kubernetes"
-  - "EKS" 
-  - "ECS"
-categories:
-  - "API"
-  - "Kubernetes"
-  - "Container"
-menu:
-  main:
-    name: Containerization
-    weight: 14
+# title: "Docker And Kubernetes"
+# date: 2022-01-01
+# thumbnail: "img/placeholder.png"
+# tags:
+#   - "Docker"
+#   - "Kubernetes"
+#   - "EKS" 
+#   - "ECS"
+# categories:
+#   - "API"
+#   - "Kubernetes"
+#   - "Container"
+# menu:
+#   main:
+#     name: Containerization2
+#     weight: 14
 ---
 
 ## Docker
@@ -258,3 +258,27 @@ kubectl get nodes -o wide
 
 # Our kubectl context should be automatically changed to new cluster
 kubectl config view --minify
+
+
+## AKS (Azure Kubernetes Service)
+
+
+
+
+
+1. Create a resource group
+```bash
+az group create --name devopresources --location westeurope    
+```     
+2. Create ACR (Azure container repository)        
+```bash
+az acr create --resource-group devopresources --name devopsshoppingacr --sku Basic
+```
+3. Enable admin access on the ACR repor        
+
+        
+
+
+```bash
+az acr update --resource-group devopresources --n devopsshoppingacr --admin-enabled true
+```
