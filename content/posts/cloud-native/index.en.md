@@ -17,8 +17,10 @@ categories: ["Cloud Native","Design Principles"]
 tags: ["Cloud", "Cloud Native","12 Factor App", "Cloud App"]
 ---
 
+### Azure Reference Architectures
 
-
+[ Microsoft reference architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
+ 
 
 
 
