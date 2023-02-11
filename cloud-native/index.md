@@ -1,8 +1,10 @@
 # 12 Factor Principles of Cloudnative Apps 
 
 
+### Azure Reference Architectures
 
-
+[ Microsoft reference architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
+ 
 
 
 

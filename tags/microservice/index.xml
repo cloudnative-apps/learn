@@ -2,5 +2,6 @@
 Install Docker: Linux Use the following URL and download the installation file: https://hub.docker.com/editions/community/docker-ce-desktop-windows
 Install Docker: Mac Use the following URL and download the installation file: https://hub.docker.com/editions/community/docker-ce-desktop-windows
 Commands $ docker version // docker version
-Kubernetes Install KubeCtl Reference: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-Primary scalar types Create Cluster 1 eksctl create cluster --name=eksdemo1 --region=us-east-1 --zones=us-east-1a,us-east-1b --without-nodegroup Get List of clusters 1 eksctl get cluster Step-02: Create &amp;amp; Associate IAM OIDC Provider for our EKS Cluster To enable and use AWS IAM roles for Kubernetes service accounts on our EKS cluster, we must create &amp;amp; associate OIDC identity provider.</description></item></channel></rss>
+ps – list containers
+1 2 docker ps docker ps -a Stop container
+1 docker stop [name of container] Remove a container</description></item></channel></rss>
