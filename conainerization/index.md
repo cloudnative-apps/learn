@@ -191,11 +191,15 @@ Step-05: Verify Cluster & Nodes
 kubectl config view --minify
 
 
-### AKS (Azure Kubernetes Service)
+## AKS (Azure Kubernetes Service)
 
 #### AKS 
 
 * Get k8s available versions
+`
+az login
+az aks install-cli
+`
 `
 az aks get-versions --location $REGION -o table
 `
@@ -203,7 +207,28 @@ az aks get-versions --location $REGION -o table
     ```sh
     az aks get-credentials --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME
     ```
+```
+* List Kubernetes Worker Nodes
+kubectl get nodes 
+kubectl get nodes -o wide
+```
 
+
+* List Namespaces
+``` 
+kubectl get namespaces
+kubectl get ns 
+```
+
+* List Pods from all namespaces
+```
+kubectl get pods --all-namespaces
+```
+
+* List all k8s objects from Cluster Control plane
+```
+kubectl get all --all-namespaces
+```
 - Open k8s Dashboard
 ```sh
 az aks browse --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME
