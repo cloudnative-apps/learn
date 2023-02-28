@@ -130,6 +130,30 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run  #Run the web server usin
 docker build Dockerfile –t mmumshad/my-custom-app
 docker push mmumshad/my-custom-app D 
 ```
+## Kubernetes
+
+https://github.com/zealvora/certified-kubernetes-application-developer
+
+
+
+##### Kubectl
+*kubectl*, allows you to run commands against Kubernetes clusters.
+ Install kubectl
+ https://kubernetes.io/docs/tasks/tools/
+
+##### KIND
+
+##### Minikube
+https://minikube.sigs.k8s.io/docs/start/
+
+Lets you run Kubernetes locally
+```
+minikube start
+minikube start --vm-driver hyperv --hyperv-virtual-switch "Default Switch" 
+kubectl get nodes 
+```
+Open minikube dashboard `minikube dashboard`
+
 ## Kubernetes on AWS
 ### EKS ( Elastic Kubernets Service)
 ### Install KubeCtl
@@ -216,11 +240,13 @@ kubectl config view --minify
 
 #### AKS 
 
-* Get k8s available versions
-`
+```
 az login
 az aks install-cli
-`
+```
+
+* Get k8s available versions
+
 `
 az aks get-versions --location $REGION -o table
 `
@@ -254,6 +280,8 @@ kubectl get all --all-namespaces
 ```sh
 az aks browse --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME
 ```
+
+
 
 * If you're using RBAC enabled kubernetes cluster, you need to configure Service Account and RoleBinding in order to make Dashbaord work.Here is a way to give full privilege (role: cluster-admin) to the Dashboard's Service Account kubernetes-dashboard
 
