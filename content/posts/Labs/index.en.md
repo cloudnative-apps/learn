@@ -13,8 +13,8 @@ description: "Azure, kubernets ,AKS, EKS, ECS etc"
 # - name: "featured-image-preview"
 #   src: "featured-image-preview.webp"
 
-tags: ["Azure", "AWS","Cloud", "Labs"]
-categories: ["documentation"]
+tags: ["Azure", "AKS","Microservice", "Helm"]
+categories: ["Labs"]
 
 lightgallery: true
 
