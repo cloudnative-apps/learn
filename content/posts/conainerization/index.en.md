@@ -130,6 +130,30 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run  #Run the web server usin
 docker build Dockerfile –t mmumshad/my-custom-app
 docker push mmumshad/my-custom-app D 
 ```
+
+#### Docker Networking
+Docker provides different network settings for Linux and Windows.
+
+For Linux, there are six pre-configured network options:
+
+1. Bridge
+2. Host
+3. Overlay
+4. IPvLan
+5. MACvLan
+6. None
+
+For Windows, there are six pre-configured network options:
+
+1. NAT (Network Address Translation)
+2. Transparent
+3. Overlay
+4. L2Bridge
+5. L2Tunnel
+6. None
+You choose which of these network configurations to apply to your container depending on its network requirements.
+
+
 ## Kubernetes
 
 https://github.com/zealvora/certified-kubernetes-application-developer
