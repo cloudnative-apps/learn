@@ -1,20 +1,24 @@
 ---
+weight: 1
 title: "Microservice Patterns"
-date: 2022-03-12
-thumbnail: "img/placeholder.png"
-# tags:
-#   - "Cloud"
-#   - "Cloud Native"
-#   - "12 Factor App" 
-#   - "Cloud App"
-#   - "Cloud Migrations"
+date: 2020-03-06T21:29:01+08:00
+lastmod: 2020-03-06T21:29:01+08:00
+draft: false
 author: "Sharad"
 authorLink: "https://sharadsingh.net"
-categories: ["Cloud Native","Design Principles","Miroservice", "Microservice design principle]
-  # - "Microservice" 
-  # - "Design Principles" 
-#menu: main
-tags: ["Cloud", "Cloud Native","Miroservice", "Design Principles"]
+description: "Microservice Patterns"
+ 
+#    src: "port-mapping.png"
+# - name: "featured-image-preview"
+#   src: "featured-image-preview.webp"
+
+tags: ["Microservice", "Microservice Patterns"]
+categories: ["Microservice"]
+
+lightgallery: true
+
+toc:
+  auto: false
 ---
 
 ## DDD in brief
