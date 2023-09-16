@@ -27,23 +27,23 @@ dotnet new classlib -o MyLib
 dotnet new mstest -o MyLib.Test
 dotnet new nunit -o MyLib.Test
 ```
-MANAGE PROJECT DEPENDENCIES
+#### Manage project dependency
 Add a reference to another project
-`dotnet add reference [PROJECT_PATH]`
-`dotnet add reference ../MyLib/MyLib.csproj`
+```dotnet add reference [PROJECT_PATH] 
+ dotnet add reference ../MyLib/MyLib.csproj```
 Remove a project reference
-`dotnet remove reference [PROJECT_PATH]`
-`dotnet remove reference ../MyLib/MyLib.csproj`
+```dotnet remove reference [PROJECT_PATH] 
+ dotnet remove reference ../MyLib/MyLib.csproj```
 List all project references
-`dotnet list reference`
+```dotnet list reference```
 Add a Nuget package
-`dotnet add package [PACKAGE]`
-`dotnet add NewtonSoft.Json`
+```dotnet add package [PACKAGE] 
+ dotnet add NewtonSoft.Json```
 Remove a Nuget package
-`dotnet remove package [PACKAGE]`
-`dotnet remove NewtonSoft.Json`
+```dotnet remove package [PACKAGE]```
+ dotnet remove NewtonSoft.Json 
 List all project references
-`dotnet list package`
+```dotnet list package```
 
 #### Test
 Run the tests
