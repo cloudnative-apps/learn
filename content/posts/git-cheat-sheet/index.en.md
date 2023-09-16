@@ -1,20 +1,25 @@
 ---
-title: "git cheat sheet"
-date: 2022-03-12
-thumbnail: "img/placeholder.png"
-# tags:
-#   - "Cloud"
-#   - "Cloud Native"
-#   - "12 Factor App" 
-#   - "Cloud App"
-#   - "Cloud Migrations"
+weight: 1
+title: "git commands"
+date: 2020-03-06T21:29:01+08:00
+lastmod: 2020-03-06T21:29:01+08:00
+draft: false
 author: "Sharad"
 authorLink: "https://sharadsingh.net"
-categories: ["git commnds","git cheatsheet"]
-  # - "Cloud Native" 
-  # - "Design Principles" 
-#menu: main
-tags: ["git commands", "git cheatsheet"]
+description: "git commands""
+# resources:
+#  - name: "port-mapping"
+#    src: "port-mapping.png"
+# - name: "featured-image-preview"
+#   src: "featured-image-preview.webp"
+
+tags: ["git commands", "git","git cheatsheet"]
+categories: ["git cheatsheet"]
+
+lightgallery: true
+
+toc:
+  auto: false
 ---
 
 ### Git Cheat sheet reference
