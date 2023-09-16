@@ -6,7 +6,7 @@ lastmod: 2020-03-06T21:29:01+08:00
 draft: false
 author: "Sharad"
 authorLink: "https://sharadsingh.net"
-description: "git commands""
+description: "git commands"
 # resources:
 #  - name: "port-mapping"
 #    src: "port-mapping.png"
