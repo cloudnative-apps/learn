@@ -1,26 +1,121 @@
 ---
 weight: 1
-title: "git commands"
+title: "Cheatsheet"
 date: 2020-03-06T21:29:01+08:00
 lastmod: 2020-03-06T21:29:01+08:00
 draft: false
 author: "Sharad"
 authorLink: "https://sharadsingh.net"
-description: "git commands"
+description: "Cheatsheet"
 # resources:
 #  - name: "port-mapping"
 #    src: "port-mapping.png"
 # - name: "featured-image-preview"
 #   src: "featured-image-preview.webp"
 
-tags: ["git commands", "git","git cheatsheet"]
-categories: ["git cheatsheet"]
+tags: ["git commands", "dotnet CLI","git cheatsheet"]
+categories: ["Cheatsheet"]
 
 lightgallery: true
 
 toc:
   auto: false
 ---
+### DOT NET CLI
+
+```
+dotnet new api -n YourApiName
+```
+Create a new .sln file
+``` dotnet new sln ```
+Create a new .sln file in a subfolder
+```
+dotnet new sln -o MySolution
+```
+#### Create a new project
+```
+dotnet new [TEMPLATE]
+dotnet new web
+``` 
+Create a new project in a subfolder
+
+```
+dotnet new [TEMPLATE] -o [NAME]
+dotnet new web -o Backend
+dotnet new mvc -o MyApp
+dotnet new console -o MyApp
+dotnet new classlib -o MyLib
+dotnet new mstest -o MyLib.Test
+dotnet new nunit -o MyLib.Test
+```
+MANAGE PROJECT DEPENDENCIES
+Add a reference to another project
+`dotnet add reference [PROJECT_PATH]`
+`dotnet add reference ../MyLib/MyLib.csproj`
+Remove a project reference
+`dotnet remove reference [PROJECT_PATH]`
+`dotnet remove reference ../MyLib/MyLib.csproj`
+List all project references
+`dotnet list reference`
+Add a Nuget package
+`dotnet add package [PACKAGE]`
+`dotnet add NewtonSoft.Json`
+Remove a Nuget package
+`dotnet remove package [PACKAGE]`
+`dotnet remove NewtonSoft.Json`
+List all project references
+`dotnet list package`
+
+#### Test
+Run the tests
+`dotnet test`
+Run the tests and create test report
+`dotnet test --logger "trx;LogFileName=results.trx"`
+List all tests without running them
+`dotnet test -t`
+Run specific tests
+`dotnet test --filter "[FILTER]"`
+`dotnet test --filter Unit`
+`dotnet test --filter "TestCategory=Database"`
+`dotnet test --filter "TestCategory!=Slow"`
+`dotnet test --filter "Unit&(TestCategory=Cat1)"`
+
+#### BUILD
+Build the project or solution in the current folder
+`dotnet build`
+Build the Release configuration
+`dotnet build -c Release`
+Build the project or solution
+`dotnet build [PROJECT/SOLUTION]`
+
+#### RUN
+Run an application
+`dotnet run`
+
+#### Publish
+Publish the project or solution from the current folder
+dotnet publish
+Publish specific project or solution
+dotnet publish [FOLDER]
+dotnet publish MyApp
+Build a self-contained executable for Windows
+dotnet publish -c Release -r win-x64 -f netcoreapp2.2
+Build a self-contained executable for Linux
+dotnet publish -c Release -r linux-x64 -f netcoreapp2.2
+#### NUGET
+Create a nuget package
+dotnet pack
+Publish a nuget package
+dotnet nuget push
+
+#### GLOBAL TOOLS
+Install a global tool
+dotnet tool install -g [TOOLNAME]
+Uninstall a global tool
+dotnet tool uninstall -g [TOOLNAME]
+List all globally installed tools
+dotnet tool list -g
+
 
 ### Git Cheat sheet reference
 
