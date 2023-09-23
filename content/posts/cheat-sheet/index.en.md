@@ -23,20 +23,29 @@ toc:
 ---
 ### DOT NET CLI
 
+``` dotnet --list-runtimes ```
+
+#### List all availabel commands
+```dotnet new list api```
+
+```dotnet new webapi -n YourApiName
 ```
-dotnet new api -n YourApiName
-```
+
 Create a new .sln file
 ``` dotnet new sln ```
 Create a new .sln file in a subfolder
+
 ```
 dotnet new sln -o MySolution
 ```
+
 #### Create a new project
+
 ```
 dotnet new [TEMPLATE]
 dotnet new web
-``` 
+```
+
 Create a new project in a subfolder
 
 ```
@@ -48,13 +57,30 @@ dotnet new classlib -o MyLib
 dotnet new mstest -o MyLib.Test
 dotnet new nunit -o MyLib.Test
 ```
+
+##### Add Git ignore file
+
+``` dotnet new gitignore ```
+
+##### Add Project for specific dotnet version
+
+``` dotnet new console -f net7.0 --name "TestUI" ```
+
+##### Add Project to sln file
+
+``` dotnet sln vscode-handson.sln add TestUI/TestUI.csproj ```
+
 #### Manage project dependency
-Add a reference to another project
-```dotnet add reference [PROJECT_PATH] 
- dotnet add reference ../MyLib/MyLib.csproj```
-Remove a project reference
-```dotnet remove reference [PROJECT_PATH] 
- dotnet remove reference ../MyLib/MyLib.csproj```
+
+**Add a reference to another project**
+
+``` dotnet add reference [PROJECT_PATH]
+ dotnet add reference ../MyLib/MyLib.csproj ```
+
+**Remove a project reference**
+
+``` dotnet remove reference [PROJECT_PATH] 
+ dotnet remove reference ../MyLib/MyLib.csproj ```
 List all project references
 ```dotnet list reference```
 Add a Nuget package
@@ -91,6 +117,12 @@ Build the project or solution
 #### RUN
 Run an application
 `dotnet run`
+
+#### Watch
+Watch an application
+`dotnet watch`
+
+
 
 #### Publish
 Publish the project or solution from the current folder
@@ -233,4 +265,3 @@ discard the changes from top of stash stack
 Preventing unintentional staging or commiting of files
 git config --global core.excludesfile [file]
 system wide ignore patern for all local repositories
-
