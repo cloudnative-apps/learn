@@ -2,4 +2,4 @@
 List all availabel commands dotnet new list api
 Create a new .sln file dotnet new sln Create a new .sln file in a subfolder
 1 dotnet new sln -o MySolution Create a new project 1 2 dotnet new [TEMPLATE] dotnet new web Create a new project in a subfolder
-1 2 3 4 5 6 7 dotnet new [TEMPLATE] -o [NAME] dotnet new web -o Backend dotnet new mvc -o MyApp dotnet new console -o MyApp dotnet new classlib -o MyLib dotnet new mstest -o MyLib.</description></item></channel></rss>
+1 2 3 4 5 6 7 8 dotnet new [TEMPLATE] -o [NAME] dotnet new web -o Backend dotnet new webapi -o Backend dotnet new mvc -o MyApp dotnet new console -o MyApp dotnet new classlib -o MyLib dotnet new mstest -o MyLib.</description></item><item><title>database internal notes</title><link>http://localhost:1313/learn/database-internals/</link><pubDate>Fri, 06 Mar 2020 21:29:01 +0800</pubDate><author>Sharad</author><guid>http://localhost:1313/learn/database-internals/</guid><description>database internal</description></item></channel></rss>
