@@ -24,7 +24,7 @@ https://netflixtechblog.com/streaming-sql-in-data-mesh-0d83f5a00d08
 https://netflixtechblog.com/all-of-netflixs-hdr-video-streaming-is-now-dynamically-optimized-e9e0cb15f2ba
 
 
-####### Some awsome blob post to read 
+###### Some awsome blob post to read 
 **Redis use cases in distributed systems**
 https://medium.com/@maheshsaini.sec/top-5-redis-use-cases-in-distributed-systems-6aadc73121c6
 
@@ -35,7 +35,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
 
 #### Load Balancer Types:
 
-1. **Hardware Load Balancer:**
+##### 1. Hardware Load Balancer:
    - **Description:** Dedicated physical devices designed for load balancing.
    - **Advantages:**
      - High throughput and low latency.
@@ -44,7 +44,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
      - Costlier than software-based solutions.
      - Limited scalability compared to some software solutions.
 
-2. **Software Load Balancer:**
+##### 2. Software Load Balancer:
    - **Description:** Implemented in software and typically runs on standard hardware.
    - **Advantages:**
      - Cost-effective and easier to scale horizontally.
@@ -52,7 +52,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - May have limitations in terms of throughput compared to hardware solutions.
 
-3. **Application Load Balancer (Layer 7):**
+##### 3. Application Load Balancer (Layer 7):
    - **Description:** Operates at the application layer, making routing decisions based on content.
    - **Advantages:**
      - Ideal for distributing traffic based on specific application data or user sessions.
@@ -60,7 +60,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - Requires more processing power for content analysis.
 
-4. **Network Load Balancer (Layer 4):**
+##### 4. Network Load Balancer (Layer 4):
    - **Description:** Operates at the transport layer and makes routing decisions based on network-level information.
    - **Advantages:**
      - Efficient for distributing traffic based on IP addresses and ports.
@@ -68,7 +68,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - Limited awareness of application-specific data.
 
-**Considerations while designing and choosing loadbalancing**
+#### Considerations while designing and choosing loadbalancing**
 1. _Scalability:_
    - Design the system to accommodate the potential growth in traffic and resources.
    - Use load balancers that support horizontal scaling.
@@ -111,7 +111,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
 11. _Integration with Auto-Scaling:_
     - If using auto-scaling for backend servers, ensure seamless integration with the load balancer to dynamically adjust capacity.
 
-### System design principle and patterns:
+#### System design principle and patterns:
 
 
 ##### 1. **Quorum:**
