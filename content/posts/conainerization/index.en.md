@@ -131,6 +131,10 @@ docker build Dockerfile –t mmumshad/my-custom-app
 docker push mmumshad/my-custom-app D 
 ```
 
+#### List volumns
+docker list volumne
+docker rm [volumne]
+
 #### Docker Networking
 Docker provides different network settings for Linux and Windows.
 

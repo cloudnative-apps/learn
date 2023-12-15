@@ -51,6 +51,7 @@ Create a new project in a subfolder
 ```
 dotnet new [TEMPLATE] -o [NAME]
 dotnet new web -o Backend
+dotnet new webapi -o Backend
 dotnet new mvc -o MyApp
 dotnet new console -o MyApp
 dotnet new classlib -o MyLib
@@ -265,3 +266,35 @@ discard the changes from top of stash stack
 Preventing unintentional staging or commiting of files
 git config --global core.excludesfile [file]
 system wide ignore patern for all local repositories
+
+
+#### VS Code Shortcuts
+
+
+#### EF Core
+```python
+dotnet tool install --global dotnet-ef --version 7.0.7
+
+dotnet ef migrations add
+dotnet ef migrations list
+dotnet ef migrations script
+dotnet ef dbcontext info
+dotnet ef dbcontext scaffold
+dotnet ef database drop
+dotnet ef database update
+```
+
+https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx
+
+
+#### Nextjs app
+npx create-next-app@latest
+npm run dev
+npm install react-icons
+npm install -D @tailwindcss/aspect-ratio
+npm install react-countdown
+
+npm install flowbite flowbite-react --save
+npm install zustand query-string
+npm install next-auth
+
