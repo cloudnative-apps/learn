@@ -21,7 +21,7 @@ https://netflixtechblog.com/streaming-sql-in-data-mesh-0d83f5a00d08
 https://netflixtechblog.com/all-of-netflixs-hdr-video-streaming-is-now-dynamically-optimized-e9e0cb15f2ba
 
 
-####### Some awsome blob post to read 
+###### Some awsome blob post to read 
 **Redis use cases in distributed systems**
 https://medium.com/@maheshsaini.sec/top-5-redis-use-cases-in-distributed-systems-6aadc73121c6
 
@@ -32,7 +32,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
 
 #### Load Balancer Types:
 
-1. **Hardware Load Balancer:**
+##### 1. Hardware Load Balancer:
    - **Description:** Dedicated physical devices designed for load balancing.
    - **Advantages:**
      - High throughput and low latency.
@@ -41,7 +41,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
      - Costlier than software-based solutions.
      - Limited scalability compared to some software solutions.
 
-2. **Software Load Balancer:**
+##### 2. Software Load Balancer:
    - **Description:** Implemented in software and typically runs on standard hardware.
    - **Advantages:**
      - Cost-effective and easier to scale horizontally.
@@ -49,7 +49,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - May have limitations in terms of throughput compared to hardware solutions.
 
-3. **Application Load Balancer (Layer 7):**
+##### 3. Application Load Balancer (Layer 7):
    - **Description:** Operates at the application layer, making routing decisions based on content.
    - **Advantages:**
      - Ideal for distributing traffic based on specific application data or user sessions.
@@ -57,7 +57,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - Requires more processing power for content analysis.
 
-4. **Network Load Balancer (Layer 4):**
+##### 4. Network Load Balancer (Layer 4):
    - **Description:** Operates at the transport layer and makes routing decisions based on network-level information.
    - **Advantages:**
      - Efficient for distributing traffic based on IP addresses and ports.
@@ -65,7 +65,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Considerations:**
      - Limited awareness of application-specific data.
 
-**Considerations while designing and choosing loadbalancing**
+#### Considerations while designing and choosing loadbalancing**
 1. _Scalability:_
    - Design the system to accommodate the potential growth in traffic and resources.
    - Use load balancers that support horizontal scaling.
@@ -108,7 +108,7 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
 11. _Integration with Auto-Scaling:_
     - If using auto-scaling for backend servers, ensure seamless integration with the load balancer to dynamically adjust capacity.
 
-### System design principle and patterns:
+#### System design principle and patterns:
 
 
 ##### 1. **Quorum:**
@@ -156,33 +156,33 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Use Case:** Event-driven architectures, systems with distinct read and write patterns (e.g., Axon Framework).
    - **Details:** CQRS allows for independent scaling and optimization of read and write models, improving performance and flexibility.
 
-##### 10. **Gossip Protocol:**
-    - **Purpose:** Disseminates information across a network by having nodes share information with a few random peers.
+##### 10. **Gossip Protocol: **
+  - **Purpose:** Disseminates information across a network by having nodes share information with a few random peers.
     - **Use Case:** Distributed databases (e.g., Cassandra), peer-to-peer systems, and decentralized networks.
     - **Details:** Nodes periodically exchange information with a small set of random peers. This helps in propagating information efficiently across the network.
 
 ##### 11. **Two-Phase Commit:**
-    - **Purpose:** Coordinates a distributed transaction to ensure that all nodes either commit or abort the transaction.
+- **Purpose:** Coordinates a distributed transaction to ensure that all nodes either commit or abort the transaction.
     - **Use Case:** Distributed databases (e.g., Oracle RAC), transactional systems, and financial applications.
     - **Details:** In the first phase, nodes agree to commit or abort. In the second phase, the decision is executed. If any node votes to abort, all nodes roll back the transaction.
 
 ##### 12. **Saga Pattern:**
-    - **Purpose:** Manages long-running and distributed transactions by breaking them into smaller, more manageable steps.
+- **Purpose:** Manages long-running and distributed transactions by breaking them into smaller, more manageable steps.
     - **Use Case:** Order processing systems, financial transactions, and business workflows.
     - **Details:** Sagas break down a complex transaction into a series of smaller, independent steps. Each step is a separate transaction with its own commit or rollback.
 
 ##### 13. **Bulkhead Pattern:**
-    - **Purpose:** Isolates components or services to prevent the failure of one from affecting others.
+- **Purpose:** Isolates components or services to prevent the failure of one from affecting others.
     - **Use Case:** Microservices architecture, fault isolation, and resilience (e.g., Netflix Hystrix).
     - **Details:** Inspired by ship design, the bulkhead pattern isolates components to contain failures. If one component fails, it does not adversely affect other components.
 
-##### 14. **Chubby (Distributed Lock Service):**
-    - **Purpose:** Coordinates distributed systems by providing a distributed lock service.
+##### 14. **Chubby (Distributed Lock Service):** 
+- **Purpose:** Coordinates distributed systems by providing a distributed lock service.
     - **Use Case:** Synchronization across distributed nodes, coordination in large-scale systems (e.g., Google Chubby).
     - **Details:** Chubby provides locks and coordination primitives. It ensures that only one node can hold a lock at a time, preventing conflicts and ensuring synchronization.
 
 ##### 15. **Delta Sync:**
-    - **Purpose:** Transfers only the changes (delta) between versions to minimize data transfer in distributed systems.
+- **Purpose:** Transfers only the changes (delta) between versions to minimize data transfer in distributed systems.
     - **Use Case:** Distributed file synchronization (e.g., Dropbox), data replication, and efficient communication between nodes.
     - **Details:** Delta sync involves transferring only the changes between versions of data, reducing the amount of data transmitted and improving efficiency.
 
