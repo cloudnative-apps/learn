@@ -21,7 +21,9 @@ https://netflixtechblog.com/streaming-sql-in-data-mesh-0d83f5a00d08
 https://netflixtechblog.com/all-of-netflixs-hdr-video-streaming-is-now-dynamically-optimized-e9e0cb15f2ba
 
 
+
 ## Some awsome blob post to read 
+
 **Redis use cases in distributed systems**
 https://medium.com/@maheshsaini.sec/top-5-redis-use-cases-in-distributed-systems-6aadc73121c6
 
