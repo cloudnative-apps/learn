@@ -159,33 +159,33 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
    - **Use Case:** Event-driven architectures, systems with distinct read and write patterns (e.g., Axon Framework).
    - **Details:** CQRS allows for independent scaling and optimization of read and write models, improving performance and flexibility.
 
-##### 10. **Gossip Protocol:**
-    - **Purpose:** Disseminates information across a network by having nodes share information with a few random peers.
+##### 10. **Gossip Protocol: **
+  - **Purpose:** Disseminates information across a network by having nodes share information with a few random peers.
     - **Use Case:** Distributed databases (e.g., Cassandra), peer-to-peer systems, and decentralized networks.
     - **Details:** Nodes periodically exchange information with a small set of random peers. This helps in propagating information efficiently across the network.
 
 ##### 11. **Two-Phase Commit:**
-    - **Purpose:** Coordinates a distributed transaction to ensure that all nodes either commit or abort the transaction.
+- **Purpose:** Coordinates a distributed transaction to ensure that all nodes either commit or abort the transaction.
     - **Use Case:** Distributed databases (e.g., Oracle RAC), transactional systems, and financial applications.
     - **Details:** In the first phase, nodes agree to commit or abort. In the second phase, the decision is executed. If any node votes to abort, all nodes roll back the transaction.
 
 ##### 12. **Saga Pattern:**
-    - **Purpose:** Manages long-running and distributed transactions by breaking them into smaller, more manageable steps.
+- **Purpose:** Manages long-running and distributed transactions by breaking them into smaller, more manageable steps.
     - **Use Case:** Order processing systems, financial transactions, and business workflows.
     - **Details:** Sagas break down a complex transaction into a series of smaller, independent steps. Each step is a separate transaction with its own commit or rollback.
 
 ##### 13. **Bulkhead Pattern:**
-    - **Purpose:** Isolates components or services to prevent the failure of one from affecting others.
+- **Purpose:** Isolates components or services to prevent the failure of one from affecting others.
     - **Use Case:** Microservices architecture, fault isolation, and resilience (e.g., Netflix Hystrix).
     - **Details:** Inspired by ship design, the bulkhead pattern isolates components to contain failures. If one component fails, it does not adversely affect other components.
 
-##### 14. **Chubby (Distributed Lock Service):**
-    - **Purpose:** Coordinates distributed systems by providing a distributed lock service.
+##### 14. **Chubby (Distributed Lock Service):** 
+- **Purpose:** Coordinates distributed systems by providing a distributed lock service.
     - **Use Case:** Synchronization across distributed nodes, coordination in large-scale systems (e.g., Google Chubby).
     - **Details:** Chubby provides locks and coordination primitives. It ensures that only one node can hold a lock at a time, preventing conflicts and ensuring synchronization.
 
 ##### 15. **Delta Sync:**
-    - **Purpose:** Transfers only the changes (delta) between versions to minimize data transfer in distributed systems.
+- **Purpose:** Transfers only the changes (delta) between versions to minimize data transfer in distributed systems.
     - **Use Case:** Distributed file synchronization (e.g., Dropbox), data replication, and efficient communication between nodes.
     - **Details:** Delta sync involves transferring only the changes between versions of data, reducing the amount of data transmitted and improving efficiency.
 
