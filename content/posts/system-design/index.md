@@ -139,6 +139,88 @@ https://levelup.gitconnected.com/system-design-interview-mastering-databases-9fb
 
 ###  4. **MapReduce:**
    - **Purpose:** Splits a large computation task into smaller sub-tasks that can be processed independently and then combines the results.
+It was popularized by Google and is widely used for distributed data processing tasks, especially in the context of big data. The MapReduce model consists of two main phases: the Map phase and the Reduce phase.
+
+#### MapReduce Model:
+
+1. **Map Phase:**
+   - **Mapper Function:** The input data is divided into smaller chunks, and a mapper function processes each chunk independently. The mapper function transforms the input data into a set of key-value pairs.
+
+   - **Example: Word Count**
+     - **Input:** "Hello World, Hello MapReduce"
+     - **Mapper Output:**
+       - "Hello" => 1
+       - "World" => 1
+       - "Hello" => 1
+       - "MapReduce" => 1
+
+2. **Shuffle and Sort:**
+   - The key-value pairs produced by the mappers are shuffled and sorted based on the keys. This ensures that all values for a given key are grouped together.
+
+3. **Reduce Phase:**
+   - **Reducer Function:** The reducer function takes the sorted key-value pairs as input and performs a specific operation on the values associated with each key. The output of the reducer is typically aggregated results.
+
+   - **Example: Word Count (Continued)**
+     - **Shuffle and Sort Output:**
+       - "Hello" => [1, 1]
+       - "MapReduce" => [1]
+       - "World" => [1]
+
+     - **Reducer Output:**
+       - "Hello" => 2
+       - "MapReduce" => 1
+       - "World" => 1
+
+#### Example: Word Count using MapReduce:
+
+Let's consider a simple example of counting the frequency of each word in a collection of documents using MapReduce.
+
+**Input:**
+```
+Document 1: "Hello World, Hello MapReduce"
+Document 2: "MapReduce is powerful, Hello MapReduce"
+```
+
+**Map Phase (Mapper Function):**
+```
+Mapper 1 Output:
+  "Hello" => 1
+  "World" => 1
+  "Hello" => 1
+  "MapReduce" => 1
+
+Mapper 2 Output:
+  "MapReduce" => 1
+  "is" => 1
+  "powerful" => 1
+  "Hello" => 1
+  "MapReduce" => 1
+```
+
+**Shuffle and Sort:**
+```
+Shuffle and Sort Output:
+  "Hello" => [1, 1]
+  "is" => [1]
+  "MapReduce" => [1, 1, 1]
+  "powerful" => [1]
+  "World" => [1]
+```
+
+**Reduce Phase (Reducer Function):**
+```
+Reducer Output:
+  "Hello" => 2
+  "is" => 1
+  "MapReduce" => 3
+  "powerful" => 1
+  "World" => 1
+```
+
+In this example, the MapReduce process efficiently counts the occurrences of each word across multiple documents, demonstrating the scalability and parallel processing capabilities of the MapReduce model. The power of MapReduce lies in its ability to process large datasets in a distributed and fault-tolerant manner.
+
+
+
    - **Use Case:** Large-scale data processing (e.g., Apache Hadoop, Apache Spark), distributed data analysis, and batch processing.
    - **Details:** MapReduce breaks down a computation into map tasks (processing data) and reduce tasks (aggregating results). It enables parallel processing on distributed data.
 
