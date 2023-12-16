@@ -1,7 +1,7 @@
 ---
 title: Modern database algorithms
 date: 2023-12-11
-linktitle: DB Algos
+linktitle: Modern database algorithms
 menu:
   main:
     name: DB Algos
