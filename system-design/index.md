@@ -236,12 +236,12 @@ In this example, the MapReduce process efficiently counts the occurrences of eac
    - **Use Case:** Event-driven architectures, auditing, and systems requiring strong traceability (e.g., financial systems, order processing).
    - **Details:** Each state change is recorded as an event. The system can be reconstructed by replaying these events, providing a complete audit trail.
 
-###  9. **CQRS (Command Query Responsibility Segregation): **
+###  9. **CQRS (Command Query Responsibility Segregation):**
    - **Purpose:** Separates the command (write) and query (read) responsibilities of a system.
    - **Use Case:** Event-driven architectures, systems with distinct read and write patterns (e.g., Axon Framework).
    - **Details:** CQRS allows for independent scaling and optimization of read and write models, improving performance and flexibility.
 
-###  10. **Gossip Protocol: **
+###  10. **Gossip Protocol:**
   - **Purpose:** Disseminates information across a network by having nodes share information with a few random peers.
     - **Use Case:** Distributed databases (e.g., Cassandra), peer-to-peer systems, and decentralized networks.
     - **Details:** Nodes periodically exchange information with a small set of random peers. This helps in propagating information efficiently across the network.
