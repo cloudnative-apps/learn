@@ -1,4 +1,66 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Azure - Category - Tech Blog</title><link>http://localhost:1313/learn/categories/azure/</link><description>Azure - Category - Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharadit2011@outlook.com (Sharad)</managingEditor><webMaster>sharadit2011@outlook.com (Sharad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/learn/categories/azure/" rel="self" type="application/rss+xml"/><item><title>Azure</title><link>http://localhost:1313/learn/azure/</link><pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate><author>Sharad</author><guid>http://localhost:1313/learn/azure/</guid><description><![CDATA[<h3 id="azure-core-concepts">Azure Core Concepts</h3>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Azure - Category - Tech Blog</title><link>http://localhost:1313/learn/categories/azure/</link><description>Azure - Category - Tech Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharadit2011@outlook.com (Sharad)</managingEditor><webMaster>sharadit2011@outlook.com (Sharad)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/learn/categories/azure/" rel="self" type="application/rss+xml"/><item><title>AZ-204 Exam</title><link>http://localhost:1313/learn/az-204/</link><pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate><author>Sharad</author><guid>http://localhost:1313/learn/az-204/</guid><description><![CDATA[<h3 id="useful-links">Useful links</h3>
+<p><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/az-204/" target="_blank" rel="noopener noreffer ">https://learn.microsoft.com/en-us/credentials/certifications/exams/az-204/
+</a>
+<a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204" target="_blank" rel="noopener noreffer ">Exam Study Guide</a></p>
+<h3 id="develop-azure-compute-solutions-2530">Develop Azure compute solutions (25–30%)</h3>
+<h4 id="implement-containerized-solutions">Implement containerized solutions</h4>
+<p>Create and manage container images for solutions
+Publish an image to Azure Container Registry
+Run containers by using Azure Container Instance
+Create solutions by using Azure Container Apps</p>
+<h4 id="implement-azure-app-service-web-apps">Implement Azure App Service Web Apps</h4>
+<p>Create an Azure App Service Web App
+Enable diagnostics logging
+Deploy code to a web app
+Configure web app settings including Transport Layer Security (TLS), API settings, and connection strings
+Implement autoscaling</p>
+<h4 id="implement-azure-functions">Implement Azure Functions</h4>
+<p>Create and configure an Azure Functions app
+Implement input and output bindings
+Implement function triggers by using data operations, timers, and webhooks</p>
+<h3 id="develop-for-azure-storage-1520">Develop for Azure storage (15–20%)</h3>
+<h4 id="develop-solutions-that-use-azure-cosmos-db">Develop solutions that use Azure Cosmos DB</h4>
+<p>Perform operations on containers and items by using the SDK
+Set the appropriate consistency level for operations
+Implement change feed notifications</p>
+<h4 id="develop-solutions-that-use-azure-blob-storage">Develop solutions that use Azure Blob Storage</h4>
+<p>Set and retrieve properties and metadata
+Perform operations on data by using the appropriate SDK
+Implement storage policies and data lifecycle management
+Implement static website hosting</p>
+<h3 id="implement-azure-security-2025">Implement Azure security (20–25%)</h3>
+<h4 id="implement-user-authentication-and-authorization">Implement user authentication and authorization</h4>
+<p>Authenticate and authorize users by using the Microsoft Identity platform
+Authenticate and authorize users and apps by using Microsoft Entra ID
+Create and implement shared access signatures
+Implement solutions that interact with Microsoft Graph</p>
+<h4 id="implement-secure-azure-solutions">Implement secure Azure solutions</h4>
+<p>Secure app configuration data by using App Configuration or Azure Key Vault
+Develop code that uses keys, secrets, and certificates stored in Azure Key Vault
+Implement Managed Identities for Azure resources</p>
+<h3 id="monitor-troubleshoot-and-optimize-azure-solutions-1520">Monitor, troubleshoot, and optimize Azure solutions (15–20%)</h3>
+<h4 id="implement-caching-for-solutions">Implement caching for solutions</h4>
+<p>Configure cache and expiration policies for Azure Cache for Redis
+Implement secure and optimized application cache patterns including data sizing, connections, encryption, and expiration
+Implement Azure Content Delivery Network endpoints and profiles</p>
+<h4 id="troubleshoot-solutions-by-using-application-insights">Troubleshoot solutions by using Application Insights</h4>
+<p>Configure an app or service to use Application Insights
+Monitor and analyze metrics, logs, and traces
+Implement Application Insights web tests and alerts</p>
+<h3 id="connect-to-and-consume-azure-services-and-third-party-services-1520">Connect to and consume Azure services and third-party services (15–20%)</h3>
+<h4 id="implement-api-management">Implement API Management</h4>
+<p>Create an Azure API Management instance
+Create and document APIs
+Configure access to APIs
+Implement policies for APIs</p>
+<h4 id="develop-event-based-solutions">Develop event-based solutions</h4>
+<p>Implement solutions that use Azure Event Grid
+Implement solutions that use Azure Event Hub</p>
+<h4 id="develop-message-based-solutions">Develop message-based solutions</h4>
+<p>Implement solutions that use Azure Service Bus
+Implement solutions that use Azure Queue Storage queues</p>
+<h3 id="azure-compute">Azure Compute</h3>
+<p>Azure compute is an on-demand computing services for running cloud based applications.</p>]]></description></item><item><title>Azure</title><link>http://localhost:1313/learn/azure/</link><pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate><author>Sharad</author><guid>http://localhost:1313/learn/azure/</guid><description><![CDATA[<h3 id="azure-core-concepts">Azure Core Concepts</h3>
 <h4 id="iaas">IAAS</h4>
 <h4 id="paas">PAAS</h4>
 <h4 id="faas">FAAS</h4>
